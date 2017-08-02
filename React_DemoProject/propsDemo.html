@@ -1,0 +1,31 @@
+	<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      var HelloMessage = React.createClass({
+		//…Ë÷√ƒ¨»œ÷µ
+		getDefaultProps: function(){
+			return {
+				name: 'XOOO'
+			};	
+		},
+		render: function(){
+			return <h1> Hello {this.props.name} </h1>;
+		}
+	  });
+	  
+	  ReactDOM.render(
+		<HelloMessage name="XXSSS" />,
+		document.getElementById('example')
+	  )
+    </script>
+  </body>
+</html>	
